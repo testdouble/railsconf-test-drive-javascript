@@ -1,3 +1,18 @@
-<div>
-  {{ 1 + 1 }}
-</div>
+<grid class="player">
+  <h2>Your Grid</h2>
+  <ng-include src="'grid.html'" />
+</grid>
+
+<start>
+  <button class="button">Start</button>
+</start>
+
+<ships>
+  <h2> Ships</h2>
+  <ng-include src="'ships.html'" />
+</ships>
+
+<selected>
+  <h2>Selected Ship</h2>
+  <ng-include src="'selected.html'" />
+</selected>
