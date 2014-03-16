@@ -5,7 +5,8 @@
   "private": true,
   "author": "John Doe",
   "devDependencies": {
-    "lineman": "~0.28.0"
+    "lineman": "~0.28.0",
+    "lineman-angular": ">= 0.2.0"
   },
   "scripts": {
     "start": "lineman run",
