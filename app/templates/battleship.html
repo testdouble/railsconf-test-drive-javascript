@@ -1,18 +1,22 @@
-<grid class="player">
-  <h2>Your Grid</h2>
-  <ng-include src="'grid.html'" />
-</grid>
+<div class="col-xs-12 col-md-4 col-md-offset-1">
+  <grid class="player">
+    <h2>Your Grid</h2>
+    <ng-include src="'grid.html'" />
+  </grid>
 
-<start>
-  <button class="button">Start</button>
-</start>
+  <ships>
+    <h2> Ships</h2>
+    <ng-include src="'ships.html'" />
+  </ships>
+</div>
 
-<ships>
-  <h2> Ships</h2>
-  <ng-include src="'ships.html'" />
-</ships>
+<controls class="col-xs-6 col-md-4">
+  <selected>
+    <h2>Selected Ship</h2>
+    <ng-include src="'selected.html'" />
+  </selected>
 
-<selected>
-  <h2>Selected Ship</h2>
-  <ng-include src="'selected.html'" />
-</selected>
+  <start>
+    <button class="btn btn-primary btn-block">Start</button>
+  </start>
+</controls>
