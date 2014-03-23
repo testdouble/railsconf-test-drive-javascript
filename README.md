@@ -1,1 +1,1 @@
-# My Lineman Application
+# RailsConf 2014 JavaScript TDD
