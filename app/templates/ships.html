@@ -1,5 +1,3 @@
 <ul class="list-unstyled">
-  <li><strong>Destroyer</strong> placed</li>
-  <li><strong>Sweeper</strong> selected</li>
-  <li><strong>Cruiser</strong> docked</li>
+  <li ng-repeat="ship in ships"><strong ng-click="pickUp(ship)">{{ ship.name }}</strong> {{ ship.location }}</li>
 </ul>
