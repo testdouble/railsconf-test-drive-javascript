@@ -5,6 +5,6 @@ var grid = [
 ];
 
 function findY(index) {
-  return "ABC".split('')[index]
-};
+  return "ABC".split('')[index];
+}
 

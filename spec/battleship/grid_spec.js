@@ -1,13 +1,4 @@
 describe("grid", function () {
-  // TODO: kill this, too brittle
-  it("is totally a grid and stuff", function () {
-    expect(grid).toEqual([
-                         { cells: [{ display: "o" }, { display: "o" }, { display: "o" }], },
-                         { cells: [{ display: "o" }, { display: "o" }, { display: "o" }], },
-                         { cells: [{ display: "o" }, { display: "o" }, { display: "o" }], },
-    ])
-  });
-
   it("can find Y given a 0 based index", function () {
     expect(findY(0)).toBe("A");
   });

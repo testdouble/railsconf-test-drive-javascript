@@ -1,5 +1,14 @@
-function Battleship() {
-}
+function Game() {
+  function fire() {
+    return this;
+  }
 
-Battleship.prototype.methodName = function () {
-};
+  function placeShip(coordinates, shipName) {
+    return "yup";
+  }
+
+  return {
+    fire: fire,
+    placeShip: placeShip,
+  };
+}
