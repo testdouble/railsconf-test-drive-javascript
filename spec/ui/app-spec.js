@@ -1,18 +1,18 @@
 describe("What the UI needs to play battleship", function () {
-  it("can start a new game", function () {
+  xit("can start a new game", function () {
   });
 
-  it("can keep track of the phase.", function () {
+  xit("can keep track of the phase.", function () {
   });
 
   context("during setup.", function () {
-    it("primary grid", function () {
+    xit("primary grid", function () {
     });
 
-    it("ship list", function () {
+    xit("ship list", function () {
     });
 
-    it("selected ship", function () {
+    xit("selected ship", function () {
     });
   });
 
