@@ -1,6 +1,8 @@
 function Game() {
+  var self = this;
+
   function fire() {
-    return this;
+    return self;
   }
 
   function placeShip(coordinates, shipName) {
