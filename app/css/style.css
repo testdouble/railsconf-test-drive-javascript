@@ -1,3 +1,8 @@
 .grid {
   text-align: center;
 }
+
+.ship {
+  background-color: #000000;
+  color: #6EFF00;
+}
