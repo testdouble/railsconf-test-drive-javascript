@@ -5,6 +5,7 @@ var ships = [
 ];
 
 function pickUp(ship) {
+  selected.ship = ship;
   ship.location = "in hand";
   return ship;
 }

@@ -12,6 +12,5 @@ angular.module("app").controller("shipsCtrl", function ($scope) {
       case "deployed":
         return "bg-success";
     }
-
   };
 });

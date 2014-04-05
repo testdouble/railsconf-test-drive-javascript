@@ -1,5 +1,5 @@
-<ul class="list-unstyled">
-  <li>Selected: <strong>Sweeper</strong></li>
+<ul ng-controller="selectedShipCtrl" class="list-unstyled">
+  <li>Selected: <strong>{{ selected.ship.name }}</strong></li>
   <li><button class="btn btn-default">Rotate</button></li>
   <li><button class="btn btn-default">Dock</button></li>
 </ul>
