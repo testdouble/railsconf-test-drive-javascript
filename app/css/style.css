@@ -5,4 +5,17 @@
 .ship {
   background-color: #000000;
   color: #6EFF00;
+  font-weight: 700;
+}
+
+.hit {
+  background-color: #d9534f;
+  color: #fff;
+  font-weight: 700;
+}
+
+.miss {
+  background-color: #999;
+  color: #fff;
+  font-weight: 700;
 }
