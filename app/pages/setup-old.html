@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RailsConf 2014 Battleship</title>
+    <link rel="stylesheet" type="text/css" href="css/app.css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Battleship: Setup</h1>
+      <div class="row">
+        <div class="col-xs-12 col-md-4 col-md-offset-1">
+          <grid>
+          <h2>Primary Grid</h2>
+          <table class="grid table table-bordered">
+            <thead>
+              <tr>
+                <th> </th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>1</th>
+                <td class="ship">o</td>
+                <td class="ship">o</td>
+                <td>o</td>
+              </tr>
+              <tr>
+                <th>2</th>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+              </tr>
+              <tr>
+                <th>3</th>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+              </tr>
+            </tbody>
+          </table>
+          </grid>
+
+          <ships>
+          <h2> Ships</h2>
+          <ul class="list-unstyled">
+            <li><h4>Destroyer</h4> <p class="ship-row bg-primary">in-hand</p> </li>
+            <li><h4>Sweeper</h4> <p class="ship-row bg-success">placed</p> </li>
+            <li><h4>Cruiser</h4> <p class="ship-row bg-warning">docked</p> </li>
+          </ul>
+          </ships>
+        </div>
+
+        <controls class="col-xs-6 col-md-4">
+        <selected>
+        <h2>Selected Ship</h2>
+        <ul class="list-unstyled">
+          <li>Selected: <strong>Destroyer</strong></li>
+          <li><button class="btn btn-default btn-sm">Rotate</button></li>
+          <li><button class="btn btn-default btn-sm">Dock</button></li>
+        </ul>
+        </selected>
+
+        <start>
+        <button class="btn btn-primary btn-block" disabled="disabled">Start</button>
+        </start>
+        </controls>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

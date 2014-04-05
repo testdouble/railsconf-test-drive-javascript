@@ -10,8 +10,14 @@
     <div class="container">
       <h1>Battleship: Setup</h1>
       <div class="row">
-        <div class="col-xs-12 col-md-4 col-md-offset-1">
-          <grid>
+        <div class="col-xs-12 col-md-6 col-md-offset-1">
+
+        <h2>Selected Ship</h2>
+        <ul class="list-unstyled">
+          <li>Selected: <strong>Destroyer</strong></li>
+          <li><button class="btn btn-default btn-sm">Rotate</button></li>
+          <li><button class="btn btn-default btn-sm">Dock</button></li>
+        </ul>
           <h2>Primary Grid</h2>
           <table class="grid table table-bordered">
             <thead>
@@ -20,6 +26,8 @@
                 <th>A</th>
                 <th>B</th>
                 <th>C</th>
+                <th>D</th>
+                <th>E</th>
               </tr>
             </thead>
             <tbody>
@@ -28,9 +36,13 @@
                 <td class="ship">o</td>
                 <td class="ship">o</td>
                 <td>o</td>
+                <td>o</td>
+                <td>o</td>
               </tr>
               <tr>
                 <th>2</th>
+                <td>o</td>
+                <td>o</td>
                 <td>o</td>
                 <td>o</td>
                 <td>o</td>
@@ -40,35 +52,63 @@
                 <td>o</td>
                 <td>o</td>
                 <td>o</td>
+                <td>o</td>
+                <td>o</td>
+              </tr>
+              <tr>
+                <th>4</th>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+              </tr>
+              <tr>
+                <th>5</th>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
               </tr>
             </tbody>
           </table>
-          </grid>
 
-          <ships>
-          <h2> Ships</h2>
-          <ul class="list-unstyled">
-            <li><h4>Destroyer</h4> <p class="ship-row bg-primary">in-hand</p> </li>
-            <li><h4>Sweeper</h4> <p class="ship-row bg-success">placed</p> </li>
-            <li><h4>Cruiser</h4> <p class="ship-row bg-warning">docked</p> </li>
-          </ul>
-          </ships>
         </div>
 
-        <controls class="col-xs-6 col-md-4">
-        <selected>
-        <h2>Selected Ship</h2>
-        <ul class="list-unstyled">
-          <li>Selected: <strong>Destroyer</strong></li>
-          <li><button class="btn btn-default btn-sm">Rotate</button></li>
-          <li><button class="btn btn-default btn-sm">Dock</button></li>
-        </ul>
-        </selected>
+        <div class="col-md-3">
+          <h2> Ships</h2>
+          <ul class="list-unstyled">
+            <li>
+            <h4>Destroyer</h4>
+            <ul class="list-inline ship-status">
+              <li class="ship">o</li>
+              <li class="ship">o</li>
+              <li class="ship">o</li>
+              <li class="ship-row bg-primary">in-hand </li>
+            </ul>
+            </li>
+            <li>
+            <h4>Sweeper</h4>
+            <ul class="list-inline ship-status">
+              <li class="ship">o</li>
+              <li class="ship">o</li>
+              <li class="ship-row bg-success">deployed </li>
+            </ul>
+            </li>
+            <li>
+            <h4>Cruiser</h4>
+            <ul class="list-inline ship-status">
+              <li class="ship">o</li>
+              <li class="ship">o</li>
+              <li class="ship">o</li>
+              <li class="ship">o</li>
+              <li class="ship-row bg-warning">docked </li>
+            </ul>
+            </li>
+          </ul>
 
-        <start>
-        <button class="btn btn-primary btn-block" disabled="disabled">Start</button>
-        </start>
-        </controls>
+        </div>
       </div>
     </div>
 
