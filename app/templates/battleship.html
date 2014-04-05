@@ -1,22 +1,13 @@
-<div class="col-xs-12 col-md-4 col-md-offset-1">
-  <grid ng-controller="gridCtrl">
-    <h2>Your Grid</h2>
-    <ng-include src="'grid.html'" />
-  </grid>
+<h1>Battleship: Setup</h1>
+<main class="col-xs-12 col-sm-4 col-sm-offset-1">
+  <h2>Selected Ship</h2>
+  <ng-include src="'selected.html'"></ng-include>
 
-  <ships ng-controller="shipsCtrl">
-    <h2> Ships</h2>
-    <ng-include src="'ships.html'" />
-  </ships>
-</div>
+  <h2>Your Grid</h2>
+  <ng-include src="'grid.html'"></ng-include>
+</main>
 
-<controls class="col-xs-6 col-md-4">
-  <selected>
-    <h2>Selected Ship</h2>
-    <ng-include src="'selected.html'" />
-  </selected>
-
-  <start>
-    <button class="btn btn-primary btn-block">Start</button>
-  </start>
-</controls>
+<sidebar class="col-sm-4">
+  <h2> Ships</h2>
+  <ng-include src="'ships.html'"></ng-include>
+</sidebar>
