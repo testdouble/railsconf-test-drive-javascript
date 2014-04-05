@@ -1,5 +1,5 @@
 function Game() {
-  var self = this;
+  var self;
 
   function fire() {
     return self;
@@ -9,7 +9,7 @@ function Game() {
     return "yup";
   }
 
-  return {
+  return self = {
     fire: fire,
     placeShip: placeShip,
   };
