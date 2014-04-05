@@ -4,7 +4,7 @@
 
   <ul class="list-inline ship-status">
     <li ng-repeat="segment in ship.hull" class="ship">{{ segment.status }}</li>
-    <li class="ship-row bg-warning">{{ ship.location }}</li>
+    <li class="ship-row {{ shipStatusClass(ship) }}">{{ ship.location }}</li>
   </ul>
 
   </li>
