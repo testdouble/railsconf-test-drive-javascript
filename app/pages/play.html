@@ -20,6 +20,8 @@
                 <th>A</th>
                 <th>B</th>
                 <th>C</th>
+                <th>D</th>
+                <th>E</th>
               </tr>
             </thead>
             <tbody>
@@ -28,15 +30,37 @@
                 <td class="miss">x</td>
                 <td class="hit">x</td>
                 <td>o</td>
+                <td>o</td>
+                <td>o</td>
               </tr>
               <tr>
                 <th>2</th>
                 <td>o</td>
                 <td>o</td>
                 <td>o</td>
+                <td>o</td>
+                <td>o</td>
               </tr>
               <tr>
                 <th>3</th>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+              </tr>
+              <tr>
+                <th>4</th>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+              </tr>
+              <tr>
+                <th>5</th>
+                <td>o</td>
+                <td>o</td>
                 <td>o</td>
                 <td>o</td>
                 <td>o</td>
@@ -54,6 +78,8 @@
                 <th>A</th>
                 <th>B</th>
                 <th>C</th>
+                <th>D</th>
+                <th>E</th>
               </tr>
             </thead>
             <tbody>
@@ -62,18 +88,40 @@
                 <td class="ship">o</td>
                 <td class="ship">o</td>
                 <td>o</td>
+                <td>o</td>
+                <td>o</td>
               </tr>
               <tr>
                 <th>2</th>
                 <td>o</td>
                 <td>o</td>
                 <td>o</td>
+                <td class="miss">x</td>
+                <td class="hit">x</td>
               </tr>
               <tr>
                 <th>3</th>
                 <td>o</td>
                 <td>o</td>
                 <td>o</td>
+                <td>o</td>
+                <td class="ship">o</td>
+              </tr>
+              <tr>
+                <th>4</th>
+                <td class="ship">o</td>
+                <td class="ship">o</td>
+                <td class="ship">o</td>
+                <td>o</td>
+                <td class="ship">o</td>
+              </tr>
+              <tr>
+                <th>5</th>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td class="ship">o</td>
               </tr>
             </tbody>
           </table>
@@ -81,13 +129,34 @@
 
         </div>
 
-        <controls class="col-xs-6 col-md-4">
+        <controls class="col-xs-3 col-md-3">
           <ships>
           <h2> Ships</h2>
           <ul class="list-unstyled">
-            <li><h4>Destroyer</h4> <p class="ship-row bg-primary">in-hand</p> </li>
-            <li><h4>Sweeper</h4> <p class="ship-row bg-success">placed</p> </li>
-            <li><h4>Cruiser</h4> <p class="ship-row bg-warning">docked</p> </li>
+            <li>
+            <h4>Destroyer</h4>
+            <ul class="list-inline ship-status">
+              <li class="ship">o</li>
+              <li class="ship">o</li>
+              <li class="ship">o</li>
+            </ul>
+            </li>
+            <li>
+            <h4>Sweeper</h4>
+            <ul class="list-inline ship-status">
+              <li class="ship">o</li>
+              <li class="ship">o</li>
+            </ul>
+            </li>
+            <li>
+            <h4>Cruiser</h4>
+            <ul class="list-inline ship-status">
+              <li class="hit">x</li>
+              <li class="ship">o</li>
+              <li class="ship">o</li>
+              <li class="ship">o</li>
+            </ul>
+            </li>
           </ul>
           </ships>
 
