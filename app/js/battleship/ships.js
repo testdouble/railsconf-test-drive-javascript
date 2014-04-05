@@ -1,7 +1,7 @@
 var ships = [
-  { name: "destroyer", location: "docked" },
-  { name: "sweeper", location: "docked" },
-  { name: "cruiser", location: "docked" },
+  { name: "destroyer", location: "docked" , hull: [{ status: "o" }, { status: "o" }, { status: "o" }]},
+  { name: "sweeper", location: "docked", hull: [{ status: "o" }, { status: "o" }]},
+  { name: "cruiser", location: "docked", hull: [{ status: "o" }, { status: "o" }, { status: "o" }, { status: "o" }]},
 ];
 
 function pickUp(ship) {

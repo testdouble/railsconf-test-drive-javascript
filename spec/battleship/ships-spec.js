@@ -3,15 +3,24 @@ describe("ships", function () {
   });
 
   it("should be a list of ships, i think?", function () {
-    expect(ships).toEqual([
-                            { name: "destroyer", location: "docked" },
-                            { name: "sweeper", location: "docked" },
-                            { name: "cruiser", location: "docked" },
-    ]);
+    expect(ships.forEach).toBeDefined();
   });
 
-  it("should be able to pick one up", function () {
-    pickUp(ships[1]);
-    expect(ships[1].location).toEqual("in hand");
+  context("ship", function () {
+    var ship;
+    beforeEach(function () {
+      ship = ships[0];
+    });
+
+    it("should be able to pick one up", function () {
+      pickUp(ships[1]);
+      expect(ships[1].location).toEqual("in hand");
+    });
+
+    it("should have a healthy hull", function () {
+      ship.hull.forEach(function (section) {
+        expect(section.status).toEqual("o");
+      });
+    });
   });
 });

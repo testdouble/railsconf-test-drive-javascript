@@ -1,12 +1,11 @@
 <ul ng-controller="shipsCtrl" class="list-unstyled">
   <li ng-repeat="ship in ships">
   <h4 ng-click="pickUp(ship)">{{ ship.name }}</h4>
+
   <ul class="list-inline ship-status">
-    <li class="ship">o</li>
-    <li class="ship">o</li>
-    <li class="ship">o</li>
-    <li class="ship">o</li>
-    <li class="ship-row bg-warning">{{ ship.location }} </li>
+    <li ng-repeat="segment in ship.hull" class="ship">{{ segment.status }}</li>
+    <li class="ship-row bg-warning">{{ ship.location }}</li>
   </ul>
+
   </li>
 </ul>
