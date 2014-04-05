@@ -2,6 +2,17 @@
   text-align: center;
 }
 
+.grid {
+  width: auto;
+  float: none;
+}
+.grid > tbody > tr > th {
+  width: 38px;
+}
+.grid > tbody > tr > td {
+  width: 38px;
+}
+
 .ship {
   background-color: #393939;
   color: #6EFF00;
