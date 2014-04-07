@@ -1,14 +1,54 @@
-<table ng-controller="gridCtrl" class="grid table table-bordered">
-  <thead>
-    <tr>
-      <th> </th>
-      <th ng-repeat="cell in grid[0].cells">{{ findY($index) }}</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr ng-repeat="row in grid">
-      <th>{{ $index + 1 }}</th>
-      <td ng-repeat="cell in row.cells">{{ cell.display }}</td>
-    </tr>
-  </tbody>
-</table>
+<table class="grid table table-bordered">
+            <thead>
+              <tr>
+                <th> </th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+                <th>E</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>1</th>
+                <td class="ship">o</td>
+                <td class="ship">o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+              </tr>
+              <tr>
+                <th>2</th>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+              </tr>
+              <tr>
+                <th>3</th>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+              </tr>
+              <tr>
+                <th>4</th>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+              </tr>
+              <tr>
+                <th>5</th>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+                <td>o</td>
+              </tr>
+            </tbody>
+          </table>
