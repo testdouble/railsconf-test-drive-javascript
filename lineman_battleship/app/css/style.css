@@ -1,4 +1,13 @@
-.hello {
-  background-color: #dedede;
-  border: 1px solid #efefef;
+.square {
+  width: 50px;
+  height: 50px;
+  margin: 3px;
+  box-shadow:
+  0 0 0 1px hsl(0, 0%, 80%),
+  0 0 0 2px hsl(0, 0%, 90%);
+}
+
+.grid {
+  border-collapse: seperate;
+  border-spacing: 4px;
 }
