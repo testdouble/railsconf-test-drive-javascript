@@ -7,7 +7,8 @@
   </head>
   <body>
 
-    <div id="main">
+    <div id="main" ng-app="battleship/ui">
+      <h1>{{ 1 + 1 }}</h1>
 
       <div id="game-status" class="status"></div>
 
@@ -16,86 +17,14 @@
         <input id="fire" type="button" value="Fire!">
       </form>
 
-      <table class="grid">
+      <table ng-controller="gridCtrl" class="grid">
         <tr>
           <th></th>
-          <th>1</th>
-          <th>2</th>
-          <th>3</th>
-          <th>4</th>
-          <th>5</th>
-          <th>6</th>
-          <th>7</th>
+          <th ng-repeat="header in grid.columnHeaders">{{ header }}</th>
         </tr>
-        <tr>
-          <th>1</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-        </tr>
-        <tr>
-          <th>2</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-        </tr>
-        <tr>
-          <th>3</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-        </tr>
-        <tr>
-          <th>4</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-        </tr>
-        <tr>
-          <th>5</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-        </tr>
-        <tr>
-          <th>6</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-        </tr>
-        <tr>
-          <th>7</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
-          <th class="square">o</th>
+        <tr ng-repeat="row in grid.rows">
+          <th>{{ row.header }}</th>
+          <th ng-repeat="square in row.squares" class="square">{{ square.note }}</th>
         </tr>
       </table>
     </div>
