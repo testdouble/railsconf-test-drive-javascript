@@ -1,4 +1,4 @@
-battleship.Game = function Game () {
+app.Game = function Game () {
   var self = {};
 
   function fire(coordinates) {

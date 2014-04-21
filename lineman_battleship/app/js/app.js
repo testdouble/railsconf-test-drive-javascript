@@ -10,6 +10,9 @@
 //TODO ng-repeat
 //TODO module
 
-window.battleship = {
-  ui: angular.module("battleship/ui", []),
-};
+
+// namespace for our objects
+window.app = {};
+
+// angular module declaration
+angular.module("app", []);

@@ -15,7 +15,7 @@ module.exports = function(lineman) {
 
     js: {
       app: [
-        "app/js/battleship/battleship.js",
+        "app/js/app.js",
         "app/js/**/**.js",
       ],
       vendor: [

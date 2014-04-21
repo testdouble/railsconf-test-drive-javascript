@@ -1,7 +1,7 @@
 describe("grid", function () {
   var grid;
   beforeEach(function () {
-    grid = battleship.gridModule();
+    grid = app.gridModule();
   });
 
   it("has rows", function () {

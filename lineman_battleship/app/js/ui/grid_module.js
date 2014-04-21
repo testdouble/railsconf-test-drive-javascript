@@ -1,4 +1,4 @@
-battleship.gridModule = function () {
+app.gridModule = function () {
   var exports = {};
   var rows = [
     { header: "A", squares: [ { note: "o" },{ note: "o" },{ note: "o" },{ note: "o" },{ note: "o" },{ note: "o" },{ note: "o" }] },

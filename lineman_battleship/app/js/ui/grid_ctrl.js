@@ -1,3 +1,3 @@
-battleship.ui.controller("gridCtrl", function($scope) {
-  $scope.grid = battleship.gridModule();
+angular.module("app").controller("gridCtrl", function($scope) {
+  $scope.grid = app.gridModule();
 });
