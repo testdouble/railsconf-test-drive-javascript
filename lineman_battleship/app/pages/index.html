@@ -7,17 +7,17 @@
   </head>
   <body>
 
-    <div id="main" ng-app="app">
+    <div id="main" ng-app="app" ng-controller="gameCtrl">
       <h1>{{ 1 + 1 }}</h1>
 
-      <div id="game-status" class="status"></div>
 
       <form id="fire-control" action="">
-        <input id="coordinates" type="text" placeholder="A1">
+        <input id="coordinates" type="text" ng-model="shot" placeholder="A1">
         <input id="fire" type="button" value="Fire!">
+        <span id="game-status" class="status">{{ shot }}</span>
       </form>
 
-      <table ng-controller="gridCtrl" class="grid">
+      <table class="grid">
         <tr>
           <th></th>
           <th ng-repeat="header in grid.columnHeaders">{{ header }}</th>
