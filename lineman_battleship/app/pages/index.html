@@ -7,24 +7,24 @@
   </head>
   <body>
 
-    <div id="main" ng-app="app" ng-controller="gameCtrl">
-      <h1>{{ 1 + 1 }}</h1>
-
+    <div id="main" ng-app="app" ng-controller="gameCtrl as game">
+      <h1>Battleship</h1>
+      <h2>{{ game.status() }}</h2>
 
       <form id="fire-control" action="">
         <input id="coordinates" type="text" ng-model="shot" placeholder="A1">
-        <input id="fire" type="button" value="Fire!">
-        <span id="game-status" class="status">{{ shot }}</span>
+        <input id="fire" type="button" value="Fire!" ng-click="game.fire(shot)">
+        <span id="game-status" class="status">{{ game.status() }}</span>
       </form>
 
       <table class="grid">
         <tr>
           <th></th>
-          <th ng-repeat="header in grid.columnHeaders">{{ header }}</th>
+          <th ng-repeat="header in game.columnHeaders">{{ header }}</th>
         </tr>
-        <tr ng-repeat="row in grid.rows">
-          <th>{{ row.header }}</th>
-          <th ng-repeat="square in row.squares" class="square">{{ square.note }}</th>
+        <tr ng-repeat="row in game.rowHeaders">
+          <th>{{ row }}</th>
+          <th ng-repeat="column in game.columnHeaders" class="square">{{ game.note(row + column) }}</th>
         </tr>
       </table>
     </div>

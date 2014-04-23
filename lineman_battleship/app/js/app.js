@@ -9,6 +9,8 @@
 //TODO $scope
 //TODO ng-repeat
 //TODO module
+//TODO ng-model
+//TODO ng-click
 
 
 // namespace for our objects

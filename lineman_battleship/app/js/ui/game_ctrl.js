@@ -1,3 +1,3 @@
-angular.module("app").controller("gameCtrl", function($scope) {
-  $scope.grid = app.gridModule();
+angular.module("app").controller("gameCtrl", function() {
+  return new app.Game();
 });
