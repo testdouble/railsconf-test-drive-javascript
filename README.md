@@ -10,7 +10,7 @@ More importantly, this stuff can be super fun.
 
 
 
-By Zach Briggs, Todd Kaufman, and Justing Searls of [Test Double](http://testdouble.com/)
+By Zach Briggs, Todd Kaufman, and Justin Searls of [Test Double](http://testdouble.com/)
 
 ## Setup
 
