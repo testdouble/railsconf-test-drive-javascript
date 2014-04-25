@@ -33,7 +33,9 @@ By Zach Briggs, Todd Kaufman, and Justin Searls of [Test Double](http://testdoub
 ![Mockup](/mockup.png?raw=true)
 
 MVP:
-Single grid, single player game. User fires blindly until they sink all opponent ships. The player doesn't have ships of their own.
+* Single grid, single player game
+* User fires blindly until they sink all opponent ships
+* The player doesn't have ships of their own
 
 Bonus:
 * Randomize opponent ship positions
