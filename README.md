@@ -29,7 +29,7 @@ By Zach Briggs, Todd Kaufman, and Justin Searls of [Test Double](http://testdoub
 * `cd static_start`
 * `open index.html`
 
-## Goals
+## Building Battleship
 ![Mockup](/mockup.png?raw=true)
 
 MVP:
