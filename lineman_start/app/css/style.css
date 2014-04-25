@@ -1,4 +1,14 @@
-.hello {
-  background-color: #dedede;
-  border: 1px solid #efefef;
+.grid td {
+  width: 67px;
+  height: 67px;
+  box-shadow:
+  0 0 0 1px hsl(0, 0%, 80%),
+  0 0 0 2px hsl(0, 0%, 90%);
+
+  text-align: center;
+}
+
+.grid {
+  border-collapse: seperate;
+  border-spacing: 4px;
 }
