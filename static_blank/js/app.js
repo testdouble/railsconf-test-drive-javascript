@@ -1,6 +1,3 @@
-// Angular module declaration.
-angular.module("app", []);
+// TODO: Angular module declaration
 
-angular.module("app").controller("gameCtrl", function ($scope) {
-  $scope.game = new Game();
-});
+//TODO: Angular controller
