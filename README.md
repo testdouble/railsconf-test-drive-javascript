@@ -28,3 +28,7 @@ By Zach Briggs, Todd Kaufman, and Justin Searls of [Test Double](http://testdoub
 1.  Copy the project from a provided USB stick to where you put code
 * `cd static_start`
 * `open index.html`
+
+## Planning
+Review the mockup
+![Mockup](/mockup.png?raw=true)
