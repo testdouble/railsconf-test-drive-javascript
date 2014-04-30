@@ -8,6 +8,13 @@ JavaScript gives you superpowers. If you already know Rails, then familiarity wi
 
 More importantly, this stuff can be super fun.
 
+## Overview
+
+1. [Read Deck](https://speakerdeck.com/theotherzach/test-drive-a-browser-game-with-angularjs)
+2. Start with EITHER lineman_start or static_start. Use the static project if you're interested in JavaScript and don't care about modern tooling. Otherwise use Lineman. (Details in setup below.)
+3. Follow steps outlined in the deck. They're very rough as they were meant to be used as we were following along in the workshop. Email zach@testdouble.com if you would like more detail. If I don't get emails, I won't worry about outlining them in greater detail.
+4. Cheat by looking at EITHER 02a_lineman_finish or 02b_static_finish.
+
 
 
 By Zach Briggs, Todd Kaufman, and Justin Searls of [Test Double](http://testdouble.com/)
