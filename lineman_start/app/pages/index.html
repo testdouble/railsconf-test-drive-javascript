@@ -7,13 +7,13 @@
   </head>
 
   <!-- TODO: change <body> to <body ng-app> -->
-  <body>
+  <body ng-app="app" ng-controller="gameCtrl">
 
-    <h2>Status: {{ 1 + 1 }}</h2>
+    <h2>{{ game.status() }}</h2>
 
     <div class="fire-control">
-      <input type="text">
-      <input type="button" value="Fire!">
+      <input type="text" ng-model="shot">
+      <input type="button" value="Fire!" ng-click="game.fire(shot)">
     </div>
 
     <table class="grid">

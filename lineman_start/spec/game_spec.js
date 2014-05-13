@@ -9,7 +9,7 @@ describe("A game of battleship", function () {
     expect(game.status()).toBe("You may fire when ready.");
   });
 
-  xit("can hit a ship", function () {
+  it("can hit a ship", function () {
     game.fire("A1");
     expect(game.status()).toBe("HIT");
   });
