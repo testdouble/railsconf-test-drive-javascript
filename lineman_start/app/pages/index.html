@@ -6,7 +6,6 @@
     <link rel="stylesheet" type="text/css" href="css/app.css" media="all" />
   </head>
 
-  <!-- TODO: change <body> to <body ng-app> -->
   <body ng-app="app" ng-controller="gameCtrl">
 
     <h2>{{ game.status() }}</h2>
@@ -17,88 +16,20 @@
     </div>
 
     <table class="grid">
-      <tr>
-        <th></th>
+      <thead>
         <tr>
           <th></th>
-          <th>1</th>
-          <th>2</th>
-          <th>3</th>
-          <th>4</th>
-          <th>5</th>
-          <th>6</th>
-          <th>7</th>
+          <th ng-repeat="columnHeader in game.columnHeaders()">{{ columnHeader }}</th>
         </tr>
-        <tr>
-          <th>A</th>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
+      </thead>
+      <tbody>
+        <tr ng-repeat="rowHeader in game.rowHeaders()">
+          <th>{{ rowHeader }}</th>
+          <td ng-repeat="columnHeader in game.columnHeaders()">
+            {{ game.note(rowHeader + columnHeader) }}
+          </td>
         </tr>
-        <tr>
-          <th>B</th>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-        </tr>
-        <tr>
-          <th>C</th>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-        </tr>
-        <tr>
-          <th>D</th>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-        </tr>
-        <tr>
-          <th>E</th>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-        </tr>
-        <tr>
-          <th>F</th>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-        </tr>
-        <tr>
-          <th>G</th>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-          <td>o</td>
-        </tr>
+      </tbody>
     </table>
 
     <script type="text/javascript" src="js/app.js"></script>

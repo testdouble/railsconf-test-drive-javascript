@@ -14,7 +14,36 @@ describe("A game of battleship", function () {
     expect(game.status()).toBe("HIT");
   });
 
-  //TODO: Write this spec.
-  xit("can miss a ship", function () {
+  it("can miss a ship", function () {
+    game.fire("B1");
+    expect(game.status()).toBe("MISS");
   });
+
+  it("can display column headers", function () {
+    expect(game.columnHeaders().forEach).toBeDefined();
+  });
+
+
+  it("can display row headers", function () {
+    expect(game.rowHeaders().forEach).toBeDefined();
+  });
+
+  context("displays notes", function () {
+
+    it("displays empty note", function () {
+      expect(game.note("B1")).toBe("o");
+    });
+
+    it("displays hit note", function () {
+      game.fire("A1");
+      expect(game.note("A1")).toBe("HIT");
+    });
+
+    it("displays miss note", function () {
+      game.fire("B1");
+      expect(game.note("B1")).toBe("MISS");
+    });
+  });
+
+
 });
